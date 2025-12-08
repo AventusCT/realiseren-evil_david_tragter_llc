@@ -11,3 +11,5 @@ Gebruik Git als volgt:
 - Laat die reviewen en mergen
 
 Veel succes met je portfolio!
+
+DAYUM MA GUY -Seth
