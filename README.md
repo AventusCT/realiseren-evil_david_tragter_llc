@@ -12,4 +12,4 @@ Gebruik Git als volgt:
 
 Veel succes met je portfolio!
 
-DAYUM MA GUY -Seth
+Shalom -Seth
