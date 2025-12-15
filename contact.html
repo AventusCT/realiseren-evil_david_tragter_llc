@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div>
+    <h1>Contact us</h1>
+    <p>Vraag ons alles wat je wilt!</p>
+ </div>
+    <div id="contact-form">
+
+    <form action="mailto:216601@student.aventus.nl" method="post" enctype="text/plain">
+        <label for="name">Naam:</label><br />
+        <input type="text" id="name" name="name" /><br />
+        <label for="email">E-mail:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="Re-enter email">Re-enter email:</label><br />
+        <input type="email" id="email/metadat/Re-enter email" name="Re-enter email" /><br />
+        <label for="message">Bericht:</label><br />
+        <textarea id="message" name="message"></textarea><br />
+        <input type="submit" value="Verzenden" />
+    </form>
+    </div>
+</body>
+
+</html>
+<script>
+    const emailInput = document.getElementById('email');
+    const reEnterEmailInput = document.getElementById('email/metadat/Re-enter email');
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        if (emailInput.value !== reEnterEmailInput.value) {
+            event.preventDefault();
+            alert('De e-mailadressen komen niet overeen. Probeer het opnieuw.');
+        } else if (!emailInput.value || !reEnterEmailInput.value) {
+            event.preventDefault();
+            alert('Vul beide e-mailvelden in.');
+        }
+
+    });
+</script>
+
