@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, sans-serif;
+}
+.Logo{
+   border-radius: 10px;
+    width: 75px;
+    height: 75px;
+}
+
+.menubalk{
+  border-radius: 50px;
+  background-color: #c49b16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  list-style: none;
+}
+.menubalk a{
+  color: rgb(102, 88, 36);
+  text-align: center;
+  margin: 90px;
+
+}
+.menubalk a:hover{
+  background-color: #c0811c;
+}
