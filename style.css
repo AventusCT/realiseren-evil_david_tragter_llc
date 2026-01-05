@@ -1,7 +1,7 @@
 /* Algemene pagina */
 body {
   font-family: Arial, sans-serif;
-  background: #1f1f1f;
+  background: #000000;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,14 +22,15 @@ div {
 
 div:hover {
   transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 15px 40px #72651c5d;
+  box-shadow: 0 25px 75px #957611
+;
 }
 
 
 /* Titel */
 h1 {
   margin-top: 0;
-  color: #72651c5d;
+  color: #c49b16;
 }
 
 /* Contact form container */
@@ -52,7 +53,7 @@ label {
 
 input:focus + label,
 textarea:focus + label {
-  color: #72651c;
+  color: #c49b16;
 }
 
 
@@ -69,8 +70,8 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #72651c;
-  box-shadow: 0 0 0 4px rgba(114, 101, 28, 0.914);
+  border-color: #c49b16;
+  box-shadow: 0 0 0 4px rgba(196, 155, 22, 0.914);
   transform: scale(1.02);
 }
 
@@ -83,7 +84,7 @@ textarea {
 /* Verzenden knop */
 input[type="submit"] {
   margin-top: 20px;
-  background: linear-gradient(135deg,#72651c, #423a0e96);
+  background: linear-gradient(135deg,#c49b16, #c89f18);
   color: white;
   border: none;
   cursor: pointer;
@@ -93,12 +94,12 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(110, 90, 1, 0.4);
+  box-shadow: 0 10px 25px rgba(196, 155, 22, 0.3);
 }
 
 input[type="submit"]:active {
   transform: translateY(0);
-  box-shadow: 0 5px 15px rgba(110, 90, 1, 0.3);
+  box-shadow: 0 5px 15px rgba(196, 155, 22, 0.3);
 }
 
 
@@ -114,8 +115,8 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #72651c5d;
-  box-shadow: 0 0 0 4px rgba(114,101,28,0.15);
+  border-color: #c49b16;
+  box-shadow: 0 0 0 4px rgba(196, 155, 22, 0.15);
   transform: scale(1.02);
 }
 @keyframes fadeUp {
