@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Informatie</title>
+</head>
+<body>
+<nav class="navbar">
+  <img class="Logo" src="Assets/9636ee55-4d87-4e71-a11a-1cb7c7bbf218.png">
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="menubalk" id="menu">
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="booking-page.html">Booking</a></li>
+    <li><a href="InfoPage.html">Info</a></li>
+    <li><a href="reviewpage.html">Review</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="OverOns.html">Over ons</a></li>
+  </ul>
+</nav>
+
+<nav class="InformatiePagina">
+    <section class="info-container">
+        <h2>Welkom bij onze informatiepagina</h2>
+        <p>
+            Op deze pagina vind je alle belangrijke informatie over onze diensten,
+            openingstijden, locatie en veelgestelde vragen. We streven ernaar om
+            alles zo duidelijk mogelijk uit te leggen zodat je precies weet waar je aan toe bent.
+        </p>
+
+        <h3>Onze diensten</h3>
+        <p>
+            Wij bieden verschillende mogelijkheden aan zoals boekingen, rondleidingen,
+            arrangementen en persoonlijke ondersteuning. Elke dienst is ontworpen om
+            jouw ervaring zo prettig mogelijk te maken.
+        </p>
+
+        <h3>Openingstijden</h3>
+        <ul>
+            <li>Maandag t/m Vrijdag: 09:00 – 18:00</li>
+            <li>Zaterdag: 10:00 – 16:00</li>
+            <li>Zondag: Gesloten</li>
+        </ul>
+
+        <h3>Locatie</h3>
+        <p>
+            Je vindt ons op een centrale locatie die makkelijk bereikbaar is met zowel
+            de auto als het openbaar vervoer.
+        </p>
+
+        <h3>Veelgestelde vragen</h3>
+        <p>
+            Heb je vragen? Bekijk dan onze FAQ-sectie of neem contact met ons op via de contactpagina.
+        </p>
+    </section>
+</nav>
+
+
+
+
+</body>
+<script>
+    function toggleMenu() {
+        document.getElementById("menu").classList.toggle("show");
+}
+</script>
+</html>

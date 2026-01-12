@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Ons</title>
+    <style>
+        body{
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        h4{
+            color: white;
+        }
+        /*----------------------------------------------------------------------------------------*/
+        p.BarberText{
+            color: white;
+            font-family: cursive;
+            position: relative;
+            top: -20px;
+        }
+
+        p.Position{
+            font-weight: 600;
+            color: #f0ad4e;
+            display: flex;
+            justify-content: center;
+        }
+
+        img.BarberImage{
+            max-height: 200px;
+            width: 120px;  
+            border: 8px solid #f0ad4e;
+        }
+
+        h4.naam{
+            position: relative;
+            top: -22px;
+        }
+
+        /*----------------------------------------------------------------------------------------*/
+        div.BarberContent {
+            max-width: 800px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+
+            display: flex;
+            flex-direction: row;   /* standaard, maar expliciet is goed */
+            gap: 20px;
+        }
+
+        div.BarberContent2 {
+            max-width: 800px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+
+            display: flex;
+            flex-direction: row-reverse;   /* standaard, maar expliciet is goed */
+            gap: 20px;
+        }
+
+        div.BarberOneImage,
+        div.BarberTwoImage,
+        div.BarberThreeImage,
+        div.BarberFourImage,
+        div.BarberFiveImage,
+        div.BarberSixImage {
+            width: 150px;
+            flex-shrink: 0; /* afbeelding krimpt niet */
+        }
+
+        div.BarberOneText,
+        div.BarberTwoText,
+        div.BarberThreeText,
+        div.BarberFourText,
+        div.BarberFiveText,
+        div.BarberSixText {
+            flex: 1;
+        }
+
+        img.BarberImage {
+            max-width: 100%;
+            height: auto;
+            border: 8px solid #f0ad4e;
+        }
+
+        @media (max-width: 768px) {
+            div.BarberContent,
+            div.BarberContent2 {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+    <link rel="STYLESHEET" href="style.css" type="text/css">
+<body>
+
+<nav class="navbar">
+  <img class="Logo" src="Assets/9636ee55-4d87-4e71-a11a-1cb7c7bbf218.png">
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="menubalk" id="menu">
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="booking-page.html">Booking</a></li>
+    <li><a href="InfoPage.html">Info</a></li>
+    <li><a href="reviewpage.html">Review</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="OverOns.html">Over ons</a></li>
+  </ul>
+</nav>
+
+<h1>Meet The Barbers</h1>
+
+<div class="Barbers">
+
+    <div class="BarberOne">
+
+    <p class="Position">Barber</p>
+
+    <div class="BarberContent">
+        <div class="BarberOneImage">
+            <img class="BarberImage" src="Assets/Davis_Terry 2.gif"
+                alt="Hier zou dus een mooie foto moeten staan, maar die werkt blijkbaar niet.">
+        </div>
+
+        <div class="BarberOneText">
+            <h4 class="naam">Davis Terry</h4>
+            <p class="BarberText">
+                Davis werkt als kapper bij de Urban Barber en staat bekend om zijn strakke kniptechnieken en moderne stijlen.
+                <br><br>
+                Hij luistert goed naar zijn klanten en zorgt ervoor dat iedereen tevreden de salon verlaat.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="BarberTwo">
+
+    <p class="Position">Beard Specialist</p>
+
+    <div class="BarberContent2">
+        <div class="BarberTwoImage">
+            <img class="BarberImage" src="Assets/fredick_met_ck.jpg"
+                alt="Hier zou dus een mooie foto moeten staan, maar die werkt blijkbaar niet.">
+        </div>
+
+        <div class="BarberTwoText">
+            <h4 class="naam">Fredrick Fredricksen</h4>
+            <p class="BarberText">
+                Fredrick is een barber die bekendstaat om zijn expertise in baardverzorging en strakke lijnen. <br><br>
+                Met oog voor detail en een rustige aanpak zorgt hij ervoor dat elke baard perfect in model is.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="BarberThree">
+
+    <p class="Position">Barber</p>
+
+    <div class="BarberContent">
+        <div class="BarberThreeImage">
+            <img class="BarberImage" src="Assets/gggrumbot.png"
+                alt="Hier zou dus een mooie foto moeten staan, maar die werkt blijkbaar niet.">
+        </div>
+
+        <div class="BarberThreeText">
+            <h4 class="naam">Grumbot</h4>
+            <p class="BarberText">
+                Grumbot is een robotbarber die bekendstaat om zijn snelle en precieze kniptechnieken. <br><br>
+                Hij kan elk kapsel strak en netjes stylen, van klassiek tot modern.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="BarberFour">
+
+    <p class="Position">Beard Specialist</p>
+
+    <div class="BarberContent2">
+        <div class="BarberFourImage">
+            <img class="BarberImage" src="Assets/stock-photography-businessperson-can-stock-photo-royalty-free-png-favpng-pDHxH9z4e2thFTyW6QzDE4m6C.jpg"
+                alt="Hier zou dus een mooie foto moeten staan, maar die werkt blijkbaar niet.">
+        </div>
+
+        <div class="BarberFourText">
+            <h4 class="naam">Conner</h4>
+            <p class="BarberText">
+                Conner is een barber die zich volledig richt op baardverzorging en shaping. <br><br>
+                Met zijn ervaring en oog voor detail zorgt hij dat elke baard er verzorgd en stijlvol uitziet.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="BarberFive">
+
+    <p class="Position">Barber</p>
+
+    <div class="BarberContent">
+        <div class="BarberFiveImage">
+            <img class="BarberImage" src="Assets/lebron_james.jpg"
+                alt="Hier zou dus een mooie foto moeten staan, maar die werkt blijkbaar niet.">
+        </div>
+
+        <div class="BarberFiveText">
+            <h4 class="naam">LeBron James</h4>
+            <p class="BarberText">
+                LeBron James is een barber die zijn kapsels net zo strak knipt als hij op het veld scoort. <br><br>
+                Met precisie en stijl zorgt hij dat elke klant er net zo winnend uitziet als een slam dunk.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="BarberSix">
+
+    <p class="Position">Barber In Training</p>
+
+    <div class="BarberContent2">
+        <div class="BarberSixImage">
+            <img class="BarberImage" src="Assets/Jan_Hakkert.png"
+                alt="Hier zou dus een mooie foto moeten staan, maar die werkt blijkbaar niet.">
+        </div>
+
+        <div class="BarberSixText">
+            <h4 class="naam">Jan Hakkert</h4>
+            <p class="BarberText">
+                Jan loopt stage bij de salon om zijn kappersvaardigheden te verbeteren. <br><br>
+                Tijdens zijn stage leert hij knippen, stylen en klanten goed te adviseren onder begeleiding van ervaren barbers.
+            </p>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+</body>
+</html>
