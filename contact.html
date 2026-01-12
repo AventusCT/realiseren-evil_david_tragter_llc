@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<nav class="navbar">
+  <img class="Logo" src="/Assets/9636ee55-4d87-4e71-a11a-1cb7c7bbf218a.png">
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="menubalk" id="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Booking</a></li>
+    <li><a href="#">Info</a></li>
+    <li><a href="#">Review</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Over ons</a></li>
+  </ul>
+</nav>
+ 
+<div class="container">
+  <div class="card">
+    <h1>Contact us</h1>
+    <p>Vraag ons alles wat je wilt!</p>
+  </div>
+
+  <div class="card">
+    <form>
+      <label for="name">Naam</label>
+      <input id="name" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" required>
+
+      <label for="email2">Herhaal e-mail</label>
+      <input type="email" id="email2" required>
+
+      <label for="message">Bericht</label>
+      <textarea id="message" required></textarea>
+
+      <input type="submit" value="Verzenden">
+    </form>
+  </div>
+</div>
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("show");
+}
+(function(){
+  emailjs.init("CKFaBGW0RzbUAdhYH"); 
+})();
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const email = document.getElementById("email").value;
+  const email2 = document.getElementById("email2").value;
+
+  if (email !== email2) {
+    alert("E-mails komen niet overeen!");
+    return;
+  }
+    emailjs.send("service_gg2a1d9", "template_t5y00mg", {
+    name: document.getElementById("name").value,
+    email: email,
+    message: document.getElementById("message").value,
+  })
+  .then(() => {
+    alert("Bericht verzonden!");
+    form.reset();
+  })
+  .catch(() => {
+    alert("Fout bij verzenden.");
+  });
+});
+</script>
