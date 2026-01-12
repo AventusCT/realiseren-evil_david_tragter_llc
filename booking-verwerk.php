@@ -6,7 +6,7 @@
         ';
     }
 
-    //functie voor het tonen van error messages
+    //functie voor het tonen van validatie
     function sysMsg($bgColor, $message, $subMessage, $link, $linkMsg){
         echo '
             <section class="vh-100 bg-dark d-flex align-items-center">
@@ -43,7 +43,7 @@
         }
         catch (Exception $error){
             $errorTekst = htmlspecialchars($error->getMessage());
-            sysMsg("danger", "Error :(", "$errorTekst wilt u terug naar login/registratie?", "#", "terug!");
+            sysMsg("danger", "Error :(", "$errorTekst wilt u terug naar boeken?", "../", "terug!");
             exit();
         }
 
@@ -69,7 +69,7 @@
             $stmt->bind_param("ssss", $voornaam, $achternaam, $date, $time);
 
             if($stmt->execute()){
-                sysMsg("success", "jouw afspraak is verwerkt :D", "wilt u terug naar de home page?", "#", "Terug!");
+                sysMsg("success", "jouw afspraak is verwerkt :D", "wilt u terug naar de homepage?", "homepage.html", "Terug!");
             }
 
         }
