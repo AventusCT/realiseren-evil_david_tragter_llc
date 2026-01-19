@@ -49,6 +49,7 @@
 
         $date = $_POST['datum'];
         $time = $_POST['tijd'];
+        $email = $_POST['email'];
         $voornaam = $_POST['voornaam'];
         $achternaam = $_POST['achternaam'];
         
@@ -64,9 +65,9 @@
             exit();
         }
         else{
-            $sql = "INSERT INTO afspraken (voornaam, achternaam, afspraakDatum, afspraakTijd) VALUES (?, ?, ?, ?)";
+            $sql = "INSERT INTO afspraken (email, voornaam, achternaam, afspraakDatum, afspraakTijd) VALUES (?, ?, ?, ?, ?)";
             $stmt = $conn -> prepare($sql);
-            $stmt->bind_param("ssss", $voornaam, $achternaam, $date, $time);
+            $stmt->bind_param("sssss",$email, $voornaam, $achternaam, $date, $time);
 
             if($stmt->execute()){
                 sysMsg("success", "jouw afspraak is verwerkt :D", "wilt u terug naar de homepage?", "homepage.html", "Terug!");
